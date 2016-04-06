@@ -1,9 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello World</title>
+  <title>The real first homework</title>
 </head>
 <body>
-  Hello HTML!!
-</body>
+  <p style="font-size:200%;" id="kmu-id">KMU ID:20123257</p>
+  <p style="font-size:200%;">Name:À±ÇÊ»ó</p>
+  <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T23:59">April 7th.</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
+
+  <h1>Understanding HTML Concepts</h1>
+  <ol>
+    <li>What does HTML stand for? (1 point) 
+      <ul>
+        <li>H : Hyper</li>
+        <li>T : Text</li>
+        <li>M : Markup</li>
+        <li>L : Language</li>
+      </ul>
+    </li>
+    <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
+    <div>
+      Answer: Programming languages have functional purposes. HTML, as a markup language doesn¡¯t really ¡°do¡± anything in the sense that a programming language does. HTML contains no programming logic. It doesn¡¯t have common conditional statements such as If/Else. It can¡¯t evaluate expressions or do any math. It doesn¡¯t handle events or carry out tasks. You can¡¯t declare variables and you can¡¯t write functions. It doesn¡¯t modify or manipulate data in any way. HTML can¡¯t take input and produce output. Think of it this way: you can¡¯t compute the sum of 2 + 2 in HTML; that¡¯s not what it¡¯s for. This is because HTML is not a programming language.
+    </div>
+    <li>Describe what do the following tags mean(4 point)</li>
+    <ul>
+        <li>pre: Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks</li>
+        <li>p: This is some text in a paragraph.</li>
+        <li>br: This text contains a line break. like enter key</li>
+        <li>h1, h2, h3, h4, h5, h6: This is heading. hierarchical content organization</li>
+      </ul>
+    </li>
+    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: <br><q>strong,  em</q> are semantic - they specify that the enclosed text should be "strong" or "emphasised" in some way, usually bold and italic, but allow for the actual styling to be controlled via CSS. Hence these are preferred in modern web pages. <br><q>b, i</q> are explicit - they specify bold and italic respectively.</li>
+    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: <br><q>alt</q> means a message that will be shown when the image is not available. 
+<br><q>title</q> means a message shown when a pointer is over the image</li>
+    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: 
+<br>The text in <q>th</q> elements are bold and centered by default., Table Heading
+<br>The text in <q>td</q> elements are regular and left-aligned by default.</li>
+  </ol>
+
+  <h1>Using HTML Tags</h1>
+  <ol>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: <a href="http://cs.kookmin.ac.kr">KMU-CS</a></li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: <a href="http://cs.kookmin.ac.kr" target="_blank">KMU-CS</a></li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer: <a href="http://cs.kookmin.ac.kr"><img src="files/smiley.gif" ></a></li>
+    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: <a href="#kmu-id">kmu-id</a></li>
+    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is <strong>fun</strong></li>
+    <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
+    <div>
+      Answer: <br><video width="320" height="240" controls autoplay loop>
+  <source src="files/movie.mp4" type="video/mp4">
+  <source src="files/movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+    </div>
+    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)<br><embed src="files/table-quiz.pdf" width="500" height="375" type='application/pdf'></li>
+    <li>Change the following ordered list to unordered list (2 point)
+      <ul>
+        <li>apple</li>
+        <li>banana</li>
+      </ul>
+    </li>
+    <li>Change the following ordered list numbering to capital roman character (5 point) 
+      <ol type="I">
+        <li>apple</li>
+        <li>banana</li>
+      </ol>
+    </li>
+    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: Telephone: <input type="tel" maxlength="13"name="usrtel"></li>
+    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer:
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+</li>
+    <li>Create a submit and cancel button inside a form element (2 points) Answer: <input type="submit"> <input type="reset"></li>
+    <li>Create a datetime input format to get date as an input (3 points) Answer: <input type="date"> </li>
+    <li>Create a following table (5 points) </li>
+    <img src="files/table-1.png" width=400px>
+    <div>
+<style>
+table,th,td,tr#t03 { 
+    border: 1px solid black;
+}
+th#t01 {
+    text-align: left;    
+}
+</style>
+      <table id="t03" width="400">
+  <tr>
+    <th id="t01">First Name</th>
+    <th id="t01">Last Name</th>		
+    <th id="t01">Points</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>94</td>
+  </tr>
+</table>
+    </div>
+
+    <li>Create a following table - border type does not matter (10 points) </li>
+    <img src="files/table-2.gif">
+    <div>
+
+<style>
+table#t02,th#t02,td#t02,tr#t02 {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+<body>
+<table id="t02" width="400">
+  <tr>
+    <th colspan="6">Time Table</th>
+  </tr>
+  <tr>
+    <th rowspan="6">Hours</th>
+    <th>Mon</th>
+    <th>Thu</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+  </tr>
+  <tr>
+    <td>Science</td>
+    <td>Maths</td>
+    <td>Science</td>
+    <td>Maths</td>
+    <td>Arts</td>
+  </tr>
+  <tr>
+    <td>Social</td>
+    <td>History</td>
+    <td>English</td>
+    <td>Social</td>
+    <td>Sports</td>  
+  </tr>
+  <tr>
+    <th colspan="5">Lunch</th>
+  </tr>
+  <tr>
+    <td>Science</td>
+    <td>Maths</td>
+    <td>Science</td>
+    <td>Maths</td>
+    <td rowspan="2">Arts</td>
+  </tr>
+  <tr>
+    <td>Social</td>
+    <td>History</td>
+    <td>English</td>
+    <td>Social</td>
+  </tr>
+</table>
+    </div>
+
+  </body>
 </html>
